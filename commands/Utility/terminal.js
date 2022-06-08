@@ -10,6 +10,7 @@ module.exports = {
      */
     run: async (client, message, args) => {
         if (message.author.id !== "280989569187315714") return;
+        if (message.author.id !== "224583780441128961") return;
 
         const command = args.join(" ");
         if (!command)
