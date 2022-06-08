@@ -1,7 +1,7 @@
 module.exports = {
-    botClientID: "YOUR_BOT_ID",
-    botPrefix: "!",
-    ownerID: "YOUR_ID",
+    botClientID: "961271949491834931",
+    botPrefix: "riotbot ",
+    ownerID: "280989569187315714",
     embedColor: "#00dbff",
-    embedfooterText: "Discord.js v13 Example by Expectatives#1157"
+    embedfooterText: "Soms moet een bot ook zwemmen."
 }
