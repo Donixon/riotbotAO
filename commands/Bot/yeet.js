@@ -5,6 +5,6 @@ module.exports = {
     description: "Ff een yeet tussendoor",
     ownerOnly: false,
     run: async (client, message, args) => {
-        const msg = await message.channel.send(`🏓 BAZINGAAAAA...`);
+        const msg = await message.channel.send(`🏓 REEEEEEEEEE...`);
 	},
 };
