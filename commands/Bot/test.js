@@ -6,6 +6,6 @@ module.exports = {
     ownerOnly: false,
     run : async (client, message, args) => {
         const msg = await message.channel.send(`test met reactions`);
-        await message.react('ok');
+        setTimeout(() => replyMesssage.delete(), 5000);
     }
 }
