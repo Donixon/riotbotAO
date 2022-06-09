@@ -1,4 +1,4 @@
-client.on('interactionCreate', async interaction => {
+module.exports = ('interactionCreate', async interaction => {
 	if (commandName === 'test') {
 		try {
 			const message = await interaction.reply({ content: 'Reacting!', fetchReply: true });
