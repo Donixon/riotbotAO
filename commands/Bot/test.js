@@ -1,5 +1,5 @@
 client.on('interactionCreate', async interaction => {
-	if (commandName === 'react') {
+	if (commandName === 'test') {
 		try {
 			const message = await interaction.reply({ content: 'Reacting!', fetchReply: true });
 			await message.react('🇦');
