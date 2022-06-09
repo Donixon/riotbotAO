@@ -5,7 +5,7 @@ module.exports = {
     description: "Test command",
     ownerOnly: false,
     run : async (client, message, args) => {
-        const msg = await message.channel.send(`test met reactions`);
+        const msg = await message.channel.reply(`test met reactions`);
         setTimeout(() => replyMesssage.delete(), 5000);
     }
 }
