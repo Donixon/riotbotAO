@@ -1,11 +1,12 @@
-module.exports = {
-    name: "test",
-    aliases: ["testerino"],
-    category: "Bot",
-    description: "Test command",
-    ownerOnly: false,
-    run : async (client, message, args) => {
-        const replyMesssage = await interaction.reply({conten:`test met reactions`, fetchReply: true});
-        setTimeout(() => replyMesssage.delete(), 5000);
-    }
-}
+client.on('interactionCreate', async interaction => {
+	if (commandName === 'react') {
+		try {
+			const message = await interaction.reply({ content: 'Reacting!', fetchReply: true });
+			await message.react('🇦');
+			await message.react('🇧');
+			await message.react('🇨');
+		} catch (error) {
+			// handle failure of any Promise rejection inside here
+		}
+	}
+});
