@@ -8,7 +8,7 @@ module.exports = {
     async execute(client) {
         
         // Puts an activity
-        client.user.setActivity('discord.js', {
+        client.user.setActivity('melkers', {
             type: "WATCHING",
             name: "melkers"
         });
