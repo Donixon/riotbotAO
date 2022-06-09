@@ -13,7 +13,6 @@ module.exports = {
             .setTitle(':signal_strength: Bot Ping')
             .addField("Time", `${Math.floor(msg.createdAt - message.createdAt)}ms`, true)
             .addField("API Ping", `${client.ws.ping}ms`, true)
-            .addField("TEST MIJN JONG", true)
             .setColor(client.config.embedColor)
             .setFooter({ text: `${client.config.embedfooterText}`, iconURL: `${client.user.displayAvatarURL()}` });
 
