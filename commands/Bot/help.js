@@ -1,11 +1,12 @@
 const { readdirSync } = require("fs");
+const { botPrefix } = require("../../config");
 
 // Example of how to make a Help Command
 
 module.exports = {
     name: "help",
     aliases: ["h", "commands"],
-    usage: '!help <command>',
+    usage: botPrefix + 'help <command>',
     category: "Bot",
     description: "Return all commands, or one specific command!",
     ownerOnly: false,
