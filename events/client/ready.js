@@ -8,8 +8,8 @@ module.exports = {
     async execute(client) {
         
         // Puts an activity
-        client.user.setActivity("AO is Love#5276", {
-            type: "Gluren naar",
+        client.user.setActivity('discord.js', {
+            type: "WATCHING",
             name: "melkers"
         });
         
