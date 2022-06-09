@@ -18,13 +18,13 @@ module.exports = {
         const row = new client.discord.MessageActionRow()
             .addComponents(
                 new client.discord.MessageButton()
-                    .setLabel("GitHub")
+                    .setLabel("GitHub AO")
                     .setStyle("LINK")
-                    .setURL("https://github.com/Expectatives/Discord.js-v13-Example"),
+                    .setURL("https://github.com/Donixon/riotbotAO"),
                 new client.discord.MessageButton()
-                    .setLabel("Support")
+                    .setLabel("nezor")
                     .setStyle("LINK")
-                    .setURL("https://dsc.gg/faithcommunity")
+                    .setURL("https://nezor.nl/")
             );
 
         if (!args[0]) {
@@ -48,7 +48,7 @@ module.exports = {
             // This is what it commands when using the command without arguments
             const helpEmbed = new client.discord.MessageEmbed()
                 .setTitle(`${client.user.username} Help`)
-                .setDescription(` Hello **<@${message.author.id}>**, I am <@${client.user.id}>.  \nYou can use \` ` + botPrefix + `!help <command>\` to see more info about the commands!\n**Total Commands:** ${client.commands.size}\n**Total SlashCommands:** ${client.slash.size}`)
+                .setDescription(` Hello **<@${message.author.id}>**, I am <@${client.user.id}>.  \nYou can use \` ` + botPrefix + `<command>\` to see more info about the commands!\n**Total Commands:** ${client.commands.size}\n**Total SlashCommands:** ${client.slash.size}`)
                 .addField("🤖 - Bot Commands", botCommandsList.map((data) => `${data}`).join(", "), true)
                 .addField("🛠 - Utility Commands", utilityCommandsList.map((data) => `${data}`).join(", "), true)
                 .setColor(client.config.embedColor)
