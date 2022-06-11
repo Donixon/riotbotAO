@@ -21,8 +21,11 @@ getRandomDragon: function() {
 };
 
   } catch (error) {
-    console.error(error);
-    // expected output: ReferenceError: nonExistentFunction is not defined
-    // Note - error messages will vary depending on browser
+
+   
+        run: async (client, message, args) => {
+            const msg = await message.channel.send(error);
+       
   }
   
+  }
