@@ -1,6 +1,5 @@
 try {
     fs = require('fs');
-    var parser = require('xml2json');
 
     module.exports = {
         name: "eggs",
@@ -13,7 +12,7 @@ try {
             //send message that says
             message.channel.send("Ik zit er in mijn mandje");
            
-            var credits = getCredits();
+            var name = getCredits();
         
             const msg = await message.channel.send(`Er zitten ` + credits + ` eieren in m'n mandje`);
             
@@ -30,16 +29,15 @@ try {
 
       }
       
-      //from stats.xml get Credits from from User by Name
-        function getCredits(){
-            var data = fs.readFileSync('./stats.xml', 'utf8'); 
-            var json = parser.toJson(data);
-            var obj = JSON.parse(json);
-            message.channel.send(obj);
-            var credits = obj.users.user.credits._text;
+        function getCredits()
+        {
+            var credits = 0;
+            var stats = JSON.parse(fs.readFileSync("./stats.json", "utf8"));
+            credits = stats.credits;
             return credits;
         }
-    
-    
+
+
+
     
     
