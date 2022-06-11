@@ -10,10 +10,10 @@ try {
         ownerOnly: false,
         run: async (client, message, args) => {
             
-            
+            message.channel.send("22222222");
 
             const msg = await message.channel.send(`Er zitten ` + getCredits() + ` eieren in m'n mandje`);
-            message.channel.send("22222222");
+           
         
         },
         
