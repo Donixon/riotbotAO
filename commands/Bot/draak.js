@@ -14,12 +14,9 @@ module.exports = {
 };
 
   } catch (error) {
-    child.exec(command, (err, res) => {
-        if (err) return console.log(err);
-        message.channel.send(res.slice(0, 2000), { code: "js"});
-    }
-        error.console.log(error);
-       
+   
+   console.log(error);
+    
   }
   
   
