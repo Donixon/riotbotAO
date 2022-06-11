@@ -8,11 +8,8 @@ try {
         description: "Hoeveel eieren zitter er in m'n mandje",
         ownerOnly: false,
         run: async (client, message, args) => {
-            
-            //send message that says
-            message.channel.send("Ik zit er in mijn mandje");
            
-            var name = getCredits();
+            var credits = getCredits();
         
             const msg = await message.channel.send(`Er zitten ` + credits + ` eieren in m'n mandje`);
             
