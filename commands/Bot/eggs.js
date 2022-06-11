@@ -13,7 +13,7 @@ try {
             message.channel.send("22222222");
             message.channel.send("33333");
 
-            const msg = await message.channel.send(`Er zitten ` + getCredits() + ` eieren in m'n mandje`);
+            const msg = await message.channel.send(`Er zitten  eieren in m'n mandje`);
            
         
         },
