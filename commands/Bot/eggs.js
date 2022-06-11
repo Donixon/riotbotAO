@@ -32,10 +32,11 @@ try {
       
       //from stats.xml get Credits from from User by Name
         function getCredits(){
-            var data = fs.readFileSync('stats.xml', 'utf8');
+            var data = fs.readFileSync('stats.xml', 'utf8'); 
             var json = parser.toJson(data);
             var obj = JSON.parse(json);
-            var credits = obj.stats.users.user[0].credits[0]._text;
+            message.channel.send(obj);
+            var credits = obj.stats.users[0].user[0].credits[0]._text;
             return credits;
         }
     
