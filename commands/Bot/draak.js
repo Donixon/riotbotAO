@@ -8,7 +8,7 @@ module.exports = {
     description: "Even draken spotten",
     ownerOnly: false,
     run: async (client, message, args) => {
-        const msg = await message.channel.send(`wtf is dat een` + getRandomDragon());
+        const msg = await message.channel.send(`wtf is dat een ` + getRandomDragon());
     },
 
 
