@@ -5,7 +5,7 @@ module.exports = {
     description: "Even draken spotten",
     ownerOnly: false,
     run: async (client, message, args) => {
-        const msg = await message.channel.send(`wtf is dat een `);
+        const msg = await message.channel.send(`wtf is dat een` + getRandomDragon());
 	},
 
     //make a list of dragon types and return a random dragon
