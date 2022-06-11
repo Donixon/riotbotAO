@@ -10,11 +10,13 @@ try {
         ownerOnly: false,
         run: async (client, message, args) => {
             
-            
+            //send message that says
+            message.channel.send("Ik zit er in mijn mandje");
            
             var credits = getCredits();
             
-        
+            message.channel.send("Ik zit er in mijn mandje 2");
+
             const msg = await message.channel.send(`Er zitten ` + credits + ` eieren in m'n mandje`);
             
         
