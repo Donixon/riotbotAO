@@ -30,7 +30,7 @@ try {
         {
             var credits = 0;
             var obj = JSON.parse(fs.readFileSync("./stats.json", "utf8"));
-            credits = obj.users[1].credits;
+            credits = obj.result;
             return credits;
         }
 
