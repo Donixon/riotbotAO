@@ -1,8 +1,6 @@
-fs = require('fs');
-var parser = require('xml2json');
-
-
 try {
+    fs = require('fs');
+    var parser = require('xml2json');
 
     module.exports = {
         name: "eggs",
