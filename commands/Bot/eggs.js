@@ -29,7 +29,7 @@ try {
         function getCredits()
         {
             var credits = 0;
-            var obj = await JSON.parse(fs.readFileSync("stats.json", "utf8"));
+            var obj = JSON.parse(fs.readFileSync("./stats.json", "utf8"));
             credits = obj.count;
             return credits;
         }
