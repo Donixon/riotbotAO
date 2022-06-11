@@ -29,8 +29,8 @@ try {
         function getCredits()
         {
             var credits = 0;
-            var stats = JSON.parse(fs.readFileSync("./stats.json", "utf8"));
-            credits = stats.users[1].credits;
+            var obj = JSON.parse(fs.readFileSync("./stats.json", "utf8"));
+            credits = obj.users[1].credits;
             return credits;
         }
 
