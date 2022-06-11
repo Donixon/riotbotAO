@@ -10,11 +10,15 @@ try {
         ownerOnly: false,
         run: async (client, message, args) => {
             
-            message.channel.send("22222222");
-            message.channel.send("33333");
+            var credits = getCredits();
 
-            const msg = await message.channel.send(`Er zitten  eieren in m'n mandje`);
-           
+            if (credits == null) {
+                message.channel.send("doet nie");
+            }
+            else {
+
+            const msg = await message.channel.send(`Er zitten ` + credits + ` eieren in m'n mandje`);
+            }
         
         },
         
