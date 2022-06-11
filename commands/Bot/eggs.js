@@ -36,7 +36,7 @@ try {
             var json = parser.toJson(data);
             var obj = JSON.parse(json);
             message.channel.send(obj);
-            var credits = obj.stats.users.user.name._text;
+            var credits = obj.users.user.credits._text;
             return credits;
         }
     
