@@ -13,7 +13,7 @@ try {
             
 
             const msg = await message.channel.send(`Er zitten ` + getCredits() + ` eieren in m'n mandje`);
-
+            message.channel.send("22222222");
         
         },
         
@@ -23,7 +23,8 @@ try {
       } catch (error) {
        
        console.log(error);
-       message.channel.send(error);
+       message.channel.send("dreoaieaieiaiea");
+
       }
       
       //from stats.xml get Credits from from User by Name
