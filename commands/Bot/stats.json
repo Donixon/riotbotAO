@@ -1,7 +1,3 @@
 {
-    "users":[
-      {"name":"Leon", "credits":"15"},
-      {"name":"Don", "credits":"3"}
-    ],
-    "result":true
+    "result":true, "count":42
 }
