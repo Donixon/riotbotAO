@@ -12,8 +12,6 @@ try {
 
             message.channel.send(`Jnyaaaa`);
 
-            message.channel.send(`Je hebt ${getCredits()} eieren in je mandje`);
-
             var credits = getCredits();
         
             const msg = await message.channel.send(`Er zitten ` + credits + ` eieren in m'n mandje`);
