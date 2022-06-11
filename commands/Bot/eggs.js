@@ -12,13 +12,14 @@ try {
             
             var credits = getCredits();
 
-            if (credits == null) {
-                message.channel.send("doet nie");
-            }
-            else {
+            
+                message.channel.send(credits + " eieren zitter er in m'n mandje");
+          
+
+          
 
             const msg = await message.channel.send(`Er zitten ` + credits + ` eieren in m'n mandje`);
-            }
+            
         
         },
         
