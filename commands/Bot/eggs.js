@@ -21,7 +21,7 @@ try {
     
       } catch (error) {
        
-       console.log(error);s
+       console.log(error);
        
 
       }
