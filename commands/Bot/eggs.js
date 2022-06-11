@@ -14,9 +14,7 @@ try {
             message.channel.send("Ik zit er in mijn mandje");
            
             var credits = getCredits();
-            
-            message.channel.send("Ik zit er in mijn mandje 2");
-
+        
             const msg = await message.channel.send(`Er zitten ` + credits + ` eieren in m'n mandje`);
             
         
@@ -38,7 +36,7 @@ try {
             var json = parser.toJson(data);
             var obj = JSON.parse(json);
             message.channel.send(obj);
-            var credits = obj.stats.users[0].user[0].credits[0]._text;
+            var credits = obj.stats.users.user.name._text;
             return credits;
         }
     
