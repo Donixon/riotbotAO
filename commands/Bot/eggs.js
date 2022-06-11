@@ -10,10 +10,13 @@ try {
         ownerOnly: false,
         run: async (client, message, args) => {
             
-            var credits = getCredits();
-
             
-                message.channel.send(credits + " eieren zitter er in m'n mandje");
+            try{
+            var credits = getCredits();
+            }
+            catch (error){
+                message.channel.send(error);
+            }
           
 
           
@@ -29,7 +32,7 @@ try {
       } catch (error) {
        
        console.log(error);
-       message.channel.send("dreoaieaieiaiea");
+       
 
       }
       
