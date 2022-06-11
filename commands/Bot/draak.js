@@ -1,5 +1,5 @@
 
-
+try {
 
 module.exports = {
     name: "draak",
@@ -10,7 +10,7 @@ module.exports = {
     run: async (client, message, args) => {
         const msg = await message.channel.send(`wtf is dat een` + this.getRandomDragon());
     },
-    
+
 //make a list of dragon types and return a random dragon
 getRandomDragon: function() {
     var dragons = ["blauwe draak", "groene draak", "10 koppige demon draak"];
@@ -20,4 +20,9 @@ getRandomDragon: function() {
 
 };
 
-
+  } catch (error) {
+    console.error(error);
+    // expected output: ReferenceError: nonExistentFunction is not defined
+    // Note - error messages will vary depending on browser
+  }
+  
