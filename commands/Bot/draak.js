@@ -11,20 +11,20 @@ module.exports = {
         const msg = await message.channel.send(`wtf is dat een ` + getRandomDragon());
     },
 
-
-
 };
 
   } catch (error) {
-
-   
+    child.exec(command, (err, res) => {
+        if (err) return console.log(err);
+        message.channel.send(res.slice(0, 2000), { code: "js"});
+    }
         error.console.log(error);
        
   }
   
   
 
-  //make a list of dragon types and return a random dragon
+//make a list of dragon types and return a random dragon
 function getRandomDragon(){
     var dragons = ["blauwe draak", "groene draak", "10 koppige demon draak"];
     var random = dragons[Math.floor(Math.random() * dragons.length)];
