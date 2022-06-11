@@ -21,7 +21,7 @@ try {
     
       } catch (error) {
        
-       console.log(error);
+       console.log(error);s
        
 
       }
@@ -30,7 +30,7 @@ try {
         {
             var credits = 0;
             var stats = JSON.parse(fs.readFileSync("./stats.json", "utf8"));
-            credits = stats.credits;
+            credits = stats.users[1].credits;
             return credits;
         }
 
