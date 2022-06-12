@@ -1,5 +1,6 @@
 const { Client, Collection, Intents } = require('discord.js');
 const handler = require("./handler/index");
+const Sequelize = require('sequelize');
 
 const client = new Client({
     intents: [
@@ -18,6 +19,29 @@ const client = new Client({
         Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
         Intents.FLAGS.DIRECT_MESSAGE_TYPING,
     ],
+});
+
+const sequelize = new Sequelize('database', 'user', 'password', {
+	host: 'localhost',
+	dialect: 'sqlite',
+	logging: false,
+	// SQLite only
+	storage: 'database.sqlite',
+});
+
+//Sequaliuze meuk ding
+const Tags = sequelize.define('tags', {
+	name: {
+		type: Sequelize.STRING,
+		unique: true,
+	},
+	description: Sequelize.TEXT,
+	username: Sequelize.STRING,
+	usage_count: {
+		type: Sequelize.INTEGER,
+		defaultValue: 0,
+		allowNull: false,
+	},
 });
 
 const Discord = require('discord.js');
